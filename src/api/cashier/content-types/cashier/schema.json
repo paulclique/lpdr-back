@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cashiers",
+  "info": {
+    "singularName": "cashier",
+    "pluralName": "cashiers",
+    "displayName": "Cashier"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "idth": {
+      "type": "integer",
+      "required": true,
+      "max": 99999,
+      "min": 11111,
+      "unique": true
+    },
+    "firstname": {
+      "type": "string",
+      "required": true
+    },
+    "lastname": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

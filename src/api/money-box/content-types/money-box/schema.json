@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "money_boxes",
+  "info": {
+    "singularName": "money-box",
+    "pluralName": "money-boxes",
+    "displayName": "MoneyBox"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "number": {
+      "type": "integer",
+      "required": true
+    },
+    "establishment": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::establishment.establishment",
+      "inversedBy": "money_boxes"
+    }
+  }
+}

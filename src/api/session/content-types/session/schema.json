@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sessions",
+  "info": {
+    "singularName": "session",
+    "pluralName": "sessions",
+    "displayName": "Session"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "start": {
+      "type": "datetime",
+      "required": true
+    },
+    "end": {
+      "type": "datetime"
+    },
+    "cashier": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cashier.cashier"
+    },
+    "money_box": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::money-box.money-box"
+    }
+  }
+}
